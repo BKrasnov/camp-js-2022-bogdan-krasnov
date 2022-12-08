@@ -1,1 +1,6 @@
 @import "./heading.css";
+
+.anime-image {
+  max-width: 150px;
+  max-height: 150px;
+}

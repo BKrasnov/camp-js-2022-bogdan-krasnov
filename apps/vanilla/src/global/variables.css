@@ -1,7 +1,13 @@
 :root {
-  /* Using html color names here only for showcase,
-   * you shouldn't be using color names in real projects. */
-  --heading-color-1: gold;
-  --heading-color-2: darksalmon;
-  --heading-color-3: powderblue;
+  /* General */
+  --primary-color: #96c;
+  --primary-contrast-color: #669;
+  --primary-dark-color: #639;
+  --primary-light-contrast-color: white;
+  --primary-dark-contrast-color: black;
+  --accent-light-color: #c9f;
+  --font-size-xl: 1rem;
+
+  /* Pagination */
+  --pagination-button-active-color: #4f10ad;
 }

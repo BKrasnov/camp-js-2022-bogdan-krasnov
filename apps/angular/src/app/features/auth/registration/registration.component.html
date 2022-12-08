@@ -1,0 +1,46 @@
+<h1 class="name-page">Register Page</h1>
+<form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+  <div class="container">
+    <mat-form-field>
+      <input matInput placeholder="Email" formControlName="email" />
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="First name" formControlName="firstName" />
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Last name" formControlName="lastName" />
+    </mat-form-field>
+
+    <mat-form-field>
+      <input
+        matInput
+        type="password"
+        placeholder="Password"
+        formControlName="password"
+      />
+    </mat-form-field>
+
+    <mat-form-field>
+      <input
+        matInput
+        type="password"
+        placeholder="Password Confirmation"
+        formControlName="confirmPassword"
+      />
+      <mat-hint *ngIf="registrationForm.hasError('passwordsNotMatching')"
+        >Passwords not matching</mat-hint
+      >
+    </mat-form-field>
+
+    <button
+      mat-flat-button
+      color="primary"
+      [disabled]="!registrationForm.valid"
+      type="submit"
+    >
+      Register
+    </button>
+  </div>
+</form>

@@ -1,0 +1,8 @@
+.anime__flexbox {
+  display: flex;
+  flex-direction: row;
+}
+
+.anime__image {
+  margin-right: 20px;
+}

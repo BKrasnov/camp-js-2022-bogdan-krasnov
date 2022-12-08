@@ -4,13 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./index.css" />
-    <title>Vite App</title>
+    <title>Anime Search</title>
   </head>
-  <body class="default-layout">
-    <h1 class="title">Main page ⚡</h1>
-    <div class="links">
-      <a href="/example/">Go to example page</a>
-    </div>
+  <body>
+    <header class="header">
+    </header>
+    <select class="sort-anime-table">
+    </select>
+    <div class="page-number"></div>
+    <div class="pagination"></div>
+    <table class="table-anime" aria-label="table-anime">
+      <thead>
+        <tr>
+          <th class="table-anime__top-row">Image</th>
+          <th class="table-anime__top-row">Title english</th>
+          <th class="table-anime__top-row">Title japanese</th>
+          <th class="table-anime__top-row">Status</th>
+          <th class="table-anime__top-row">Type</th>
+          <th class="table-anime__top-row">Aired Start</th>
+        </tr>
+      </thead>
+      <tbody class="table-anime__body"></tbody>
+    </table>
+    <footer class="footer"></footer>
     <script type="module" src="./index.ts"></script>
   </body>
 </html>

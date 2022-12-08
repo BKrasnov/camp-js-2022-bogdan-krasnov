@@ -66,8 +66,28 @@
       }
     }
   },
+  "@nrwl/angular:component": {
+    "style": "css",
+    "changeDetection": "OnPush",
+    "skipTests": true
+  },
+  "@nrwl/angular:directive": {
+    "skipTests": true
+  },
+  "@nrwl/angular:guard": {
+    "skipTests": true
+  },
+  "@nrwl/angular:interceptor": {
+    "skipTests": true
+  },
+  "@nrwl/angular:pipe": {
+    "skipTests": true
+  },
+  "@nrwl/angular:service": {
+    "skipTests": true
+  },
   "defaultProject": "react",
   "cli": {
-    "defaultCollection": "@nxext/vite"
+    "defaultCollection": "@nrwl/angular"
   }
 }
